@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-city" id="search-city-form">
+        <input
+          type="text"
+          placeholder="Search for a city"
+          autocomplete="off"
+          autofocus="on"
+          id="search-city-input"
+        />
+        <input type="submit" class="btn btn-primary" />
+        <button class="btn btn-success" id="current-location-button">
+          Current
+        </button>
+      </form>
+      <div class="row">
+        <div class="col-6">
+          <h1 id="city">Portland, OR</h1>
+          <div class="row">
+            <div class="col-12 today-weather">
+              <div id="date">Today</div>
+              <div id="description">Partly Cloudy</div>
+              <br />
+              <div class="today-emoji">☁️</div>
+              <span id="temperature">41</span>
+              <span id="units">°C</span>
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/602/original/portland-sign-b_w.jpg?1671435711"
+            alt="Portland, Oregon sign in black and white"
+            width="600px"
+          />
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-2">
+            Monday
+            <br />
+            <div class="today-emoji">☁️</div>
+            41°
+          </div>
+          <div class="col-2">
+            Tuesday
+            <br />
+            <div class="today-emoji">☁️</div>
+            41°
+          </div>
+          <div class="col-2">
+            Wednesday
+            <br />
+            <div class="today-emoji">☁️</div>
+            41°
+          </div>
+          <div class="col-2">
+            Thursday
+            <br />
+            <div class="today-emoji">☁️</div>
+            41°
+          </div>
+          <div class="col-2">
+            Friday
+            <br />
+            <div class="today-emoji">☁️</div>
+            41°
+          </div>
+          <div class="col-2">
+            Saturday
+            <br />
+            <div class="today-emoji">☁️</div>
+            41°
+          </div>
+        </div>
+      </div>
+      <br />
+      <footer>Created by Ashley Ferris with HTML, CSS, JS and Bootstrap</footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
